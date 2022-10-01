@@ -9,8 +9,8 @@ app2.use(bodyParser.urlencoded({extended: true}));
 var server = app2.listen(8080, console.log('server is running on port 8080'));
 
 const firebaseConfig = {
-    //lagay database
-    databaseURL: "https://studentrecords-dc0db-default-rtdb.firebaseio.com"
+    //put your firebase realtime database in here
+    databaseURL: ""
 }
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
